@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Votre avis</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- Boite de gauche -->
+            <div class="left">
+                <div class="title">
+                    <img src="image/Saly-24.png" alt="image titre" />
+                    <span class="titre">Votre avis compte pour nous!</span>
+                </div>
+                <div class="yourRate">
+                    <form>
+                        <label for="username">Votre prénom</label>
+                        <div class="boxuser">
+                            <input
+                                class="name"
+                                type="text"
+                                id="username"
+                                placeholder="Votre prénom"
+                                autocomplete="off"
+                            />
+
+                            <img
+                                class="perso"
+                                src="image/perso.svg"
+                                alt="username profil"
+                            />
+                        </div>
+                        <label for="avis">Votre avis</label>
+                        <textarea name="avis" id="avis" cols="10" rows="7"></textarea>
+                        <input type="submit" placeholder="Envoyer" />
+                    </form>
+                </div>
+            </div>
+            <!-- Boite de droite -->
+            <div class="right">
+                <div class="title">
+                    <img class="twoimage" src="image/Saly-25.png" alt="image titre 2" />
+                    <span class="titre">La boite à avis</span>
+                </div>
+                <!-- Système d'avis -->
+                <div class="content-boite">
+                    <div class="yourRate boite active">
+                        <img src="image/perso.svg" alt="user image" />
+                        <span>Kadem</span>
+                        <p class="rate-text">
+                            “ Très content du service client, j’ai pu avoir un site
+                            réalisé en moins d’une semaine! ”
+                        </p>
+                    </div>
+                    <div class="yourRate boite">
+                        <img src="image/perso.svg" alt="user image" />
+                        <span>Kadem</span>
+                        <p class="rate-text">
+                            “ Très content du service client, j’ai pu avoir un site
+                            réalisé en moins d’une semaine! ”
+                        </p>
+                    </div>
+                    <div class="yourRate boite">
+                        <img src="image/perso.svg" alt="user image" />
+                        <span>Vincent</span>
+                        <p class="rate-text">“ C'est pas mal comme concept! ”</p>
+                    </div>
+                    <div class="slider">
+                        <img
+                            id="prev"
+                            class="precedent"
+                            src="image/precedent.svg"
+                            alt="fleche precedente"
+                        />
+                        <img
+                            id="next"
+                            class="suivant"
+                            src="image/suivant.svg"
+                            alt="fleche suivante"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
